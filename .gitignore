@@ -1,0 +1,31 @@
+﻿# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio files
+*.user
+*.suo
+*.sln.docstates
+*.vs/
+*.nupkg
+
+# IDE files
+*.swp
+*~
+
+# Config files
+servers.json
+
+# Debug logs
+dfc_debug.txt
+dfc_raw.txt

@@ -1,0 +1,41 @@
+﻿=========================================
+  GitHub 发布指引
+=========================================
+
+1. 打开 https://github.com/new
+   创建新仓库，名称建议：dell-fan-controller
+
+2. 在本地目录初始化 Git：
+
+   cd C:\Users\admin\Documents\Codex\2026-06-12\new-chat\outputs\DellFanController
+   git init
+   git add .
+   git commit -m "初始提交：Dell 多服务器风扇调速工具"
+
+3. 关联远程仓库（替换 YOUR_USERNAME 和 REPO_NAME）：
+
+   git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+   git branch -M main
+   git push -u origin main
+
+4. 在 GitHub 仓库页面，点击 Releases → Create a new release
+   填写版本号 v2.3，上传 bin/NewBuild/ 目录下的：
+   - DellFanController.exe
+   - Dell\SysMgt\bmc\ 整个文件夹（ipmitool 依赖）
+
+=========================================
+  注意
+=========================================
+- 仓库只提交源代码（.cs, .csproj, .manifest 等）
+- Dell\SysMgt\bmc\ 目录下的 ipmitool.exe 等二进制文件
+  属于 Dell 官方 BMC 工具，不建议直接提交到 Git
+- 建议在 Release 页面以 ZIP 形式分发完整运行包
+
+=========================================
+  致谢来源
+=========================================
+本工具基于 cw1997/dell_fans_controller 开发
+原始项目地址：
+https://github.com/cw1997/dell_fans_controller
+
+感谢 Chang Wei (昌维) 的开源贡献

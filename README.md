@@ -73,3 +73,6 @@ DellFanController/
 - 原始项目: [cw1997/dell_fans_controller](https://github.com/cw1997/dell_fans_controller)
 - IPMI 工具: ipmitool 项目
 - Dell System Management: Dell 官方 BMC 工具
+## 已知问题
+
+- **火绒安全软件误报** — 本工具使用 ipmitool.exe 读取 BMC 传感器数据和设置风扇转速，这些属于底层硬件操作，可能被火绒等安全软件识别为可疑行为。如遇拦截，请将程序所在目录加入火绒白名单。
